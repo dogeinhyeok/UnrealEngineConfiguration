@@ -15,6 +15,24 @@ LyraStarterGame은 언리얼 엔진 학습을 위한 통합 템플릿 프로젝�
 
 LyraStarterGame은 언리얼 엔진의 다양한 기능과 실전 사용법을 체계적으로 익힐 수 있도록 설계되었습니다. 초보자부터 중급자까지 단계별로 따라갈 수 있는 실습 중심의 구조를 채택하여, 실제 게임 개발에 필요한 핵심 역량을 효과적으로 쌓을 수 있습니다.
 
+### 프로젝트 편집하기
+
+폴더 구조가 변경된 경우 반드시 `Generate Visual Studio project files`를 실행해야 합니다.
+
+#### C++ 클래스 파일 생성하기
+
+1. 언리얼 에디터에서 `Tools > New C++ Class` 메뉴를 선택합니다.
+2. 컴파일 오류를 방지하기 위해 프로젝트 소스 폴더 루트에 파일을 생성합니다.
+3. 하위 경로에 파일을 생성할 경우 헤더 연결 오류가 발생할 수 있습니다.
+4. 경로 문제가 발생하면 수정 후 재컴파일합니다.
+   - 예시: `System/LyraAssetManager.h` → `LyraAssetManager.cpp`
+
+#### C++ 클래스 파일 삭제하기
+
+1. 삭제할 `.cpp`, `.h` 파일을 제거합니다.
+2. 프로젝트 폴더에서 `LyraStarterGameClone.uproject` 파일을 우클릭합니다.
+3. `Generate Visual Studio project files`를 실행하여 프로젝트 구조를 업데이트합니다.
+
 ### Visual Studio로 개발하기
 
 #### 필수 확장 프로그램 설치하기
