@@ -9,7 +9,8 @@ Saved/
 Build/
 
 # VSCode/IDE/환경설정 파일 무시
-.vscode/
+.vscode/*
+!.vscode/settings.json
 .idea/
 *.sln
 *.suo
